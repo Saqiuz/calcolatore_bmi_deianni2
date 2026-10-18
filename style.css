@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f1f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #1a1d20;
+}
+
+main {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Titolo principale */
+.title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #1a1d20;
+}
+
+/* Sostituiamo o adattiamo i vecchi div id="card" usati come etichette */
+#card {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #1a1d20;
+}
+
+/* Se vuoi che il form abbia l'aspetto di una card bianca con bordi arrotondati */
+form {
+    background-color: #ffffff;
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    text-align: left;
+}
+
+.rigaForm {
+    margin-bottom: 20px;
+}
+
+/* Campi di input */
+.rigaForm input[type="text"],
+.rigaForm input[type="number"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #334155;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.rigaForm input[type="text"]:focus,
+.rigaForm input[type="number"]:focus {
+    border-color: #94a3b8;
+}
+
+/* Pulsante di invio */
+.rigaForm input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #1e232a;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+.rigaForm input[type="submit"]:hover {
+    background-color: #0f172a;
+}
+
+/* Classe .card vera e propria per la pagina dei risultati (da usare nel PHP) */
+.card {
+    background-color: #ffffff;
+    padding: 28px 20px;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.card .name {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: #1a1d20;
+}
+
+.card .details {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+.card .bmi-value {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 12px;
+    color: #1a1d20;
+}
+
+.card .bmi-status {
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Classi di stato per le 4 categorie di BMI (richieste dalle immagini) */
+.card.sottopeso {
+    background-color: #E3EEF9;
+    border-color: #2F6FB3;
+}
+.card.sottopeso .bmi-status {
+    color: #2F6FB3;
+}
+
+.card.normopeso {
+    background-color: #E3F4E6;
+    border-color: #256D34;
+}
+.card.normopeso .bmi-status {
+    color: #256D34;
+}
+
+.card.sovrappeso {
+    background-color: #FCEBD7;
+    border-color: #9A4F06;
+}
+.card.sovrappeso .bmi-status {
+    color: #9A4F06;
+}
+
+.card.obesita {
+    background-color: #FBE2E2;
+    border-color: #B32D2D;
+}
+.card.obesita .bmi-status {
+    color: #B32D2D;
+}

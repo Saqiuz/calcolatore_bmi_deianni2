@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
     <style>
@@ -26,9 +27,10 @@
 </head>
 <body>
     <main>
-        <h1 class="title"></h1>
+        <h1 class="title">Calcola il tuo BMI</h1>
+        <form action="bmi.php" method="POST">
         <div id="card">Nome</div>
-        <form>
+        
             <div class="rigaForm">
                 <label for=""></label>
                 <input type="text" name="nome">
@@ -44,7 +46,7 @@
                 <input type="number" name="altezza">
             </div>
             <div class="rigaForm">
-                <input type="submit" name="input">
+                <input type="submit" name="input" value="Calcola">
             </div>
         </form>
     </main>
